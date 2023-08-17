@@ -3,7 +3,11 @@
     "autoload": {
         "psr-4": {
             "Pablo\\PhpTest\\": "src/"
-        }
+        },
+        "files": [
+            "src/StringUtils/capitalize.php",
+            "tests/StringUtilsTest.php"
+        ]
     },
     "authors": [
         {
