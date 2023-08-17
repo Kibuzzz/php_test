@@ -1,0 +1,15 @@
+{
+    "name": "pablo/php_test",
+    "autoload": {
+        "psr-4": {
+            "Pablo\\PhpTest\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "kibuzz",
+            "email": "kibuzz15@gmail.com"
+        }
+    ],
+    "require": {}
+}
