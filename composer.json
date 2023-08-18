@@ -15,5 +15,7 @@
             "email": "kibuzz15@gmail.com"
         }
     ],
-    "require": {}
+    "require": {
+        "webmozart/assert": "^1.11"
+    }
 }

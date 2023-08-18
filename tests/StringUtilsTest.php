@@ -4,14 +4,12 @@
 Попробуйте изменять код функции / тестов, запуская проверки заново.
 */
 
-require("src/StringUtils/capitalize.php");
+require("vendor/autoload.php");
 
-if (StringUtils\capitalize('hello') !== 'Hello') {
-    throw new \Exception('Функция работает неверно!');
-}
+use Webmozart\Assert\Assert;
 
-if (StringUtils\capitalize('') !== '') {
-    throw new \Exception('Функция работает неверно!');
-}
+use function StringUtils\capitalize;
 
-echo "все тесты пройдены";
+Assert::eq(capitalize("hello"), "Hello");
+Assert::eq(capitalize("hello hello"), "Hello hello");
+Assert::eq(capitalize(""), "");
